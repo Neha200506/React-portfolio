@@ -31,9 +31,6 @@ const Education = () => {
                       Institution
                     </th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-teal-400 uppercase tracking-wider">
-                      Period
-                    </th>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-teal-400 uppercase tracking-wider">
                       Percentage/CGPA
                     </th>
                   </tr>
@@ -54,9 +51,6 @@ const Education = () => {
                       </td>
                       <td className="px-6 py-4 text-slate-300">
                         {edu.institution}
-                      </td>
-                      <td className="px-6 py-4 text-slate-300">
-                        {edu.period}
                       </td>
                       <td className="px-6 py-4">
                         <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-500/10 text-teal-400 border border-teal-400/30">
