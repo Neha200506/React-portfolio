@@ -81,9 +81,9 @@ const Footer = () => {
             <p className="text-slate-400 text-sm">
               © {currentYear} {personal.name}. All rights reserved.
             </p>
-            <p className="text-slate-400 text-sm flex items-center gap-1">
+            <div className="text-slate-400 text-sm flex items-center gap-1">
               Made with <Heart size={16} className="text-red-500" /> by {personal.name}
-            </p>
+            </div>
           </div>
         </div>
       </div>
