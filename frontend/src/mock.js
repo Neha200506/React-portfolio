@@ -7,7 +7,7 @@ export const portfolioData = {
     email: "neharedekar20@gmail.com",
     github: "https://github.com/Neha200506",
     linkedin: "https://www.linkedin.com/in/neha-redekar-a7812128a/",
-    profileImage: "https://via.placeholder.com/400x400/1e293b/ffffff?text=NR"
+    profileImage: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect fill='%231e293b' width='400' height='400'/%3E%3Ctext fill='%23ffffff' font-size='120' font-weight='bold' x='50%25' y='50%25' text-anchor='middle' dy='.3em' font-family='Arial'%3ENR%3C/svg%3E"
   },
   skills: [
     { name: "C", icon: "code" },
