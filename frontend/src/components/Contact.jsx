@@ -53,6 +53,31 @@ const Contact = () => {
           </p>
         </div>
 
+        {/* About Me Section */}
+        <div className="max-w-6xl mx-auto mb-12">
+          <Card className="bg-slate-800 border-slate-700 hover:border-teal-400/30 transition-all duration-300">
+            <div className="p-8">
+              <h3 className="text-3xl font-bold text-white mb-6 text-center">
+                About <span className="text-teal-400">Me</span>
+              </h3>
+              <div className="space-y-4 text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto">
+                <p>
+                  Hello! I'm Neha Redekar, a Computer Science Engineering student at Pimpri Chinchwad University.
+                </p>
+                <p>
+                  I'm a curious and passionate web developer with experience in C++, HTML, CSS, and learning Django & AI.
+                </p>
+                <p>
+                  I love building creative, real-world projects and participating in hackathons to push my limits.
+                </p>
+                <p>
+                  I enjoy solving problems, designing interfaces, and writing clean code. Let's build something amazing together!
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Form Card */}
