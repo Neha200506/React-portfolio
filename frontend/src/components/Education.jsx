@@ -84,17 +84,11 @@ const Education = () => {
                     </p>
                   </div>
                 </div>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-400">Period:</span>
-                    <span className="text-slate-300">{edu.period}</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-slate-400">Percentage/CGPA:</span>
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 border border-teal-400/30">
-                      {edu.percentage}
-                    </span>
-                  </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400 text-sm">Percentage/CGPA:</span>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-teal-500/10 text-teal-400 border border-teal-400/30">
+                    {edu.percentage}
+                  </span>
                 </div>
               </div>
             ))}
