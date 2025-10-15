@@ -55,23 +55,23 @@ export const portfolioData = {
   education: [
     {
       id: 1,
-      level: "BTech in Computer Science Engineering",
+      degree: "BTech in Computer Science Engineering",
       institution: "Pimpri Chinchwad University",
-      status: "Pursuing",
+      percentage: "7.93 CGPA",
       period: "2022 - Present"
     },
     {
       id: 2,
-      level: "12th Standard",
+      degree: "12th Standard",
       institution: "Pratibha Junior College",
-      status: "Completed",
+      percentage: "70%",
       period: "2020 - 2022"
     },
     {
       id: 3,
-      level: "10th Standard",
+      degree: "10th Standard",
       institution: "Vidya Niketan School",
-      status: "Completed",
+      percentage: "82%",
       period: "2019 - 2020"
     }
   ],
@@ -79,13 +79,13 @@ export const portfolioData = {
     {
       id: 1,
       name: "Reading Books",
-      description: "Enhances knowledge, creativity, and critical thinking skills",
+      skills: "Knowledge enhancement, Critical thinking, Creativity",
       icon: "book-open"
     },
     {
       id: 2,
       name: "Classical Dance",
-      description: "Develops discipline, grace, and artistic expression",
+      skills: "Discipline, Grace, Artistic expression, Cultural awareness",
       icon: "music"
     }
   ]

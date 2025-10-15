@@ -1,6 +1,5 @@
 import React from 'react';
 import { BookOpen, Music } from 'lucide-react';
-import { Card } from './ui/card';
 import { portfolioData } from '../mock';
 
 const Hobbies = () => {
@@ -26,28 +25,77 @@ const Hobbies = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {hobbies.map((hobby) => {
-            const IconComponent = getIcon(hobby.icon);
-            return (
-              <Card
-                key={hobby.id}
-                className="bg-slate-900 border-slate-700 hover:border-teal-400/50 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/10 hover:-translate-y-1 group"
-              >
-                <div className="p-8">
-                  <div className="w-16 h-16 mb-4 rounded-lg bg-teal-500/10 flex items-center justify-center group-hover:bg-teal-500/20 transition-colors duration-300">
-                    <IconComponent className="text-teal-400" size={32} />
+        <div className="max-w-5xl mx-auto">
+          {/* Desktop Table View */}
+          <div className="hidden md:block overflow-x-auto">
+            <div className="bg-slate-900 border border-slate-700 rounded-lg overflow-hidden">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-slate-700/50">
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-teal-400 uppercase tracking-wider">
+                      Hobby
+                    </th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-teal-400 uppercase tracking-wider">
+                      Relevant Skills & Interests
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700">
+                  {hobbies.map((hobby) => {
+                    const IconComponent = getIcon(hobby.icon);
+                    return (
+                      <tr 
+                        key={hobby.id} 
+                        className="hover:bg-slate-700/30 transition-colors duration-200"
+                      >
+                        <td className="px-6 py-4">
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-lg bg-teal-500/10 flex items-center justify-center flex-shrink-0">
+                              <IconComponent className="text-teal-400" size={24} />
+                            </div>
+                            <span className="text-white font-medium text-lg">
+                              {hobby.name}
+                            </span>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4 text-slate-300">
+                          {hobby.skills}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Mobile Card View */}
+          <div className="md:hidden space-y-4">
+            {hobbies.map((hobby) => {
+              const IconComponent = getIcon(hobby.icon);
+              return (
+                <div
+                  key={hobby.id}
+                  className="bg-slate-900 border border-slate-700 rounded-lg p-6 hover:border-teal-400/50 transition-all duration-300"
+                >
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-14 h-14 rounded-lg bg-teal-500/10 flex items-center justify-center flex-shrink-0">
+                      <IconComponent className="text-teal-400" size={28} />
+                    </div>
+                    <h3 className="text-xl font-bold text-white">
+                      {hobby.name}
+                    </h3>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {hobby.name}
-                  </h3>
-                  <p className="text-slate-300 leading-relaxed">
-                    {hobby.description}
-                  </p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-slate-400 font-medium">Relevant Skills & Interests:</p>
+                    <p className="text-slate-300">
+                      {hobby.skills}
+                    </p>
+                  </div>
                 </div>
-              </Card>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
