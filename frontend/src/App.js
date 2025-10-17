@@ -19,6 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Education />
+      <Certifications />
       <Hobbies />
       <About />
       <Contact />
