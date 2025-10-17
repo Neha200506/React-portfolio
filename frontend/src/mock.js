@@ -75,6 +75,24 @@ export const portfolioData = {
       period: "2019 - 2020"
     }
   ],
+  certifications: [
+    {
+      id: 1,
+      name: "Red Hat System Administration II (RH134)",
+      issuer: "Red Hat",
+      description: "Advanced Linux system administration skills including security, automation, and troubleshooting.",
+      certificateLink: "https://drive.google.com/file/d/12NRVNIAeExikwGGcwpBUq64L_C45dN6t/view?usp=drive_link",
+      icon: "award"
+    },
+    {
+      id: 2,
+      name: "Agile Project Management",
+      issuer: "Professional Certification",
+      description: "Comprehensive training in Agile methodologies, Scrum framework, and project management best practices.",
+      certificateLink: "https://drive.google.com/file/d/1pzmEradM_JMy94cenoen80G5XNEn0--a/view?usp=drive_link",
+      icon: "award"
+    }
+  ],
   hobbies: [
     {
       id: 1,
